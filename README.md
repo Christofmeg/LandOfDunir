@@ -1,2 +1,1 @@
-# LandOfDunir
- 
+# Land of Drunir <a href="https://www.curseforge.com/minecraft/mc-mods/land-of-drunir"><img src="http://cf.way2muchnoise.eu/versions/792922.svg" style="max-width:100%;"></a> <a href="https://www.curseforge.com/minecraft/mc-mods/land-of-drunir"><img src="https://cf.way2muchnoise.eu/792922.svg" style="max-width:100%;"></a>
