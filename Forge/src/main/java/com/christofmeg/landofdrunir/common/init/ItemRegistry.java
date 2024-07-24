@@ -13,9 +13,8 @@ public class ItemRegistry {
 
     public static final DeferredRegister<Item> ITEMS;
 
+    public static final RegistryObject<Item> RAW_GALEON;
     public static final RegistryObject<Item> GALEON;
-
-//    public static final RegistryObject<Item> EXAMPLE_ITEM;
 
     public static void init(@Nonnull IEventBus modEventBus) {
         ITEMS.register(modEventBus);
@@ -24,9 +23,8 @@ public class ItemRegistry {
     static {
         ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CommonConstants.MOD_ID);
 
+        RAW_GALEON = ITEMS.register("raw_galeon", () -> new Item(new Item.Properties()));
         GALEON = ITEMS.register("galeon", () -> new Item(new Item.Properties()));
-
-//        EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties()));
 
     }
 

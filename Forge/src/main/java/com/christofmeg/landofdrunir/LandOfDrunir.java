@@ -1,6 +1,7 @@
 package com.christofmeg.landofdrunir;
 
 import com.christofmeg.landofdrunir.common.init.BlockRegistry;
+import com.christofmeg.landofdrunir.common.init.CreativeModeTabRegistry;
 import com.christofmeg.landofdrunir.common.init.ItemRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +23,7 @@ public class LandOfDrunir {
         MinecraftForge.EVENT_BUS.register(this);
         BlockRegistry.init(modEventBus);
         ItemRegistry.init(modEventBus);
+        CreativeModeTabRegistry.init(modEventBus);
     }
 
 }

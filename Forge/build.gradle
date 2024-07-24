@@ -66,6 +66,17 @@ minecraft {
     }
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources', 'src/generated/resources']
+        }
+    }
+}
+
 dependencies {
     minecraft "net.minecraftforge:forge:${forge_minecraft_version}-${forge_version}"
     compileOnly project(":Common")
@@ -110,6 +121,8 @@ dependencies {
             runtimeOnly fg.deobf("curse.maven:emi-580555:${emi_version}")
         }
     }
+
+    implementation fg.deobf("maven.modrinth:tag-tooltips:a0H0FGkF")
 
 }
 

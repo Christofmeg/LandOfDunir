@@ -7,12 +7,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.data.tags.TagsProvider;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -32,9 +29,11 @@ public class DrunirItemTagsProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
 
-        tag(TagRegistry.Items.ORES)
-                .addTag(TagRegistry.Items.GALEON);
+        tag(Tags.Items.RAW_MATERIALS).addTag(TagRegistry.Items.RAW_MATERIALS_GALEON);
+        tag(TagRegistry.Items.RAW_MATERIALS_GALEON).add(ItemRegistry.RAW_GALEON.get());
 
-        tag(TagRegistry.Items.GALEON).add(ItemRegistry.GALEON.get());
+        tag(Tags.Items.GEMS).addTag(TagRegistry.Items.GEMS_GALEON);
+        tag(TagRegistry.Items.GEMS_GALEON).add(ItemRegistry.GALEON.get());
+
     }
 }
