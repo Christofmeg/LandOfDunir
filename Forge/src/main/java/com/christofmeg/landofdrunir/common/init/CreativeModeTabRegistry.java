@@ -22,7 +22,7 @@ public class CreativeModeTabRegistry {
     @SuppressWarnings("unused")
     public static final RegistryObject<CreativeModeTab> TAB = REGISTRY.register(CommonConstants.MOD_ID, () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + CommonConstants.MOD_ID)).icon(
-                    () -> new ItemStack(ItemRegistry.RAW_GALEON.get()))
+                    () -> new ItemStack(ItemRegistry.GALEON.get()))
             .displayItems((parameters, tabData) ->
                     ItemRegistry.ITEMS.getEntries().stream().map(RegistryObject::get).forEach(tabData::accept))
             .build());

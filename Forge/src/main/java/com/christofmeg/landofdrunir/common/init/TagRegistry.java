@@ -44,6 +44,10 @@ public class TagRegistry {
             return ItemTags.create(new ResourceLocation("forge", path));
         }
 
+
+        public static TagKey<Item> GALEON_ORE = forgeTag("galeon_ore");
+
+
         public static TagKey<Item> GEMS_GALEON = forgeTag("gems/galeon");
         public static TagKey<Item> RAW_MATERIALS_GALEON = forgeTag("raw_materials/galeon");
 

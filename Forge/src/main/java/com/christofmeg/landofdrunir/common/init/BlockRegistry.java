@@ -17,6 +17,8 @@ public class BlockRegistry {
 
 //    public static final RegistryObject<Block> EXAMPLE_BLOCK;
 
+    public static final RegistryObject<Block> PLASMITE_ORE;
+
     public static void init(@Nonnull IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
     }
@@ -25,6 +27,8 @@ public class BlockRegistry {
         BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CommonConstants.MOD_ID);
 
 //        EXAMPLE_BLOCK = BLOCKS.register("example_block", () -> new Block(BlockBehaviour.Properties.of()));
+
+        PLASMITE_ORE = BLOCKS.register("plasmite_ore", () -> new Block(BlockBehaviour.Properties.of()));
 
     }
 
