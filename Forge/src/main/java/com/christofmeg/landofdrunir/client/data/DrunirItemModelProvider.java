@@ -1,8 +1,12 @@
 package com.christofmeg.landofdrunir.client.data;
 
 import com.christofmeg.landofdrunir.CommonConstants;
+import com.christofmeg.landofdrunir.common.init.BlockRegistry;
 import com.christofmeg.landofdrunir.common.init.ItemRegistry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -20,6 +24,19 @@ public class DrunirItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        ItemRegistry.ITEMS.getEntries().stream().map(RegistryObject::get).forEach((this::basicItem));
+
+        ItemRegistry.ITEMS.getEntries().stream().map(RegistryObject::get)
+                .filter(item -> !(item instanceof BlockItem))
+                .forEach(this::basicItem);
+
+        BlockRegistry.BLOCKS.getEntries().stream().map(RegistryObject::get)
+                .forEach(item -> withExistingParent(getItemName(item), modLoc("block/" + getItemName(item))));
+
     }
+
+    @SuppressWarnings("deprecation")
+    private String getItemName(ItemLike pItemLike) {
+        return BuiltInRegistries.ITEM.getKey(pItemLike.asItem()).getPath();
+    }
+
 }

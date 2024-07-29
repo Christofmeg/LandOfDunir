@@ -1,6 +1,7 @@
 package com.christofmeg.landofdrunir.common.data;
 
 import com.christofmeg.landofdrunir.CommonConstants;
+import com.christofmeg.landofdrunir.client.data.DrunirBlockStateProvider;
 import com.christofmeg.landofdrunir.client.data.DrunirItemModelProvider;
 import com.christofmeg.landofdrunir.client.data.DrunirLanguageProvider;
 import net.minecraft.core.HolderLookup;
@@ -27,6 +28,7 @@ public class DrunirDataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         if (event.includeClient()) {
+            gen.addProvider(true, new DrunirBlockStateProvider(output, existingFileHelper));
             gen.addProvider(true, new DrunirItemModelProvider(output, existingFileHelper));
         }
 
