@@ -2,5 +2,8 @@
   "block.landofdrunir.plasmite_ore": "Plasmite Ore",
   "item.landofdrunir.galeon": "Galeon",
   "item.landofdrunir.raw_galeon": "Raw Galeon",
-  "itemGroup.landofdrunir": "Land of Drunir"
+  "itemGroup.landofdrunir": "Land of Drunir",
+  "block.landofdrunir.drunite_ore": "Drunite Ore",
+  "block.landofdrunir.galeon_block": "Galeon Block",
+  "block.landofdrunir.fir_planks": "Fir Planks"
 }

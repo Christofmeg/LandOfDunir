@@ -22,6 +22,12 @@ public class BlockRegistry {
     public static final DeferredRegister<Block> BLOCKS;
 
     public static final RegistryObject<Block> PLASMITE_ORE;
+    public static final RegistryObject<Block> GALEON_ORE;
+    public static final RegistryObject<Block> DRUNITE_ORE;
+
+    public static final RegistryObject<Block> GALEON_BLOCK;
+
+    public static final RegistryObject<Block> FIR_PLANKS;
 
     public static void init(@Nonnull IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
@@ -33,6 +39,25 @@ public class BlockRegistry {
         PLASMITE_ORE = registerBlock("plasmite_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
                 .mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
                 .strength(1.0F, 1.0F), UniformInt.of(3, 7)), new Item.Properties());
+
+        GALEON_ORE = registerBlock("galeon_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
+                .mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
+                .strength(1.0F, 1.0F), UniformInt.of(3, 7)), new Item.Properties());
+
+        DRUNITE_ORE = registerBlock("drunite_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
+                .mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
+                .strength(1.0F, 1.0F), UniformInt.of(3, 7)), new Item.Properties());
+
+        GALEON_BLOCK = registerBlock("galeon_block", () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
+                .mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
+                .strength(1.0F, 1.0F), UniformInt.of(3, 7)), new Item.Properties());
+
+        FIR_PLANKS = registerBlock("fir_planks", () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
+                .mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).requiresCorrectToolForDrops()
+                .strength(1.0F, 1.0F), UniformInt.of(3, 7)), new Item.Properties());
+
+
+
 
 
     }
