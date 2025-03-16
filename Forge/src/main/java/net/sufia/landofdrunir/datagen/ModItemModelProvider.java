@@ -146,6 +146,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModItems.GOBLIN_MERCHANT_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.DRIPPY_GOBLIN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.MAGMAFIEND_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.LIGHTLING_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
         simpleBlockItem(ModBlocks.FIR_DOOR);
         fenceItem(ModBlocks.FIR_FENCE, ModBlocks.FIR_PLANKS);

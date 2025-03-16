@@ -29,6 +29,7 @@ public class ModItems {
     public static final RegistryObject<Item> GOBLIN_MERCHANT_EGG = ITEMS.register("goblin_merchant_egg", () -> new ForgeSpawnEggItem(ModEntities.GOBLIN_MERCHANT,  -14202065, -14344948, new Item.Properties()));
     public static final RegistryObject<Item> DRIPPY_GOBLIN_EGG = ITEMS.register("drippy_goblin_egg", () -> new ForgeSpawnEggItem(ModEntities.DRIPPY_GOBLIN,  -8490981, -14202065, new Item.Properties()));
     public static final RegistryObject<Item> MAGMAFIEND_EGG = ITEMS.register("magmafiend_egg", () -> new ForgeSpawnEggItem(ModEntities.MAGMAFIEND,  -14085368, -11074556, new Item.Properties()));
+    public static final RegistryObject<Item> LIGHTLING_EGG = ITEMS.register("lightling_egg", () -> new ForgeSpawnEggItem(ModEntities.LIGHTLING,  -14085368, -11074556, new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_VENISON = ITEMS.register("raw_venison", () -> new Item(new Item.Properties().food(ModFoods.RAW_VENISON)));
     public static final RegistryObject<Item> COOKED_VENISON = ITEMS.register("cooked_venison", () -> new Item(new Item.Properties().food(ModFoods.COOKED_VENISON)));

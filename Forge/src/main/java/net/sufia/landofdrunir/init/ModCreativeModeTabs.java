@@ -112,6 +112,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GOBLIN_MERCHANT_EGG.get());
                         pOutput.accept(ModItems.DRIPPY_GOBLIN_EGG.get());
                         pOutput.accept(ModItems.MAGMAFIEND_EGG.get());
+                        pOutput.accept(ModItems.LIGHTLING_EGG.get());
 
                         pOutput.accept(ModItems.RAW_VENISON.get());
                         pOutput.accept(ModItems.COOKED_VENISON.get());
