@@ -47,6 +47,10 @@ public class ModEntities {
             ENTITY_TYPES.register("magmafiend_fireball", () -> EntityType.Builder.<MagmafiendFireballEntity>of(MagmafiendFireballEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("magmafiend_fireball"));
 
+    public static final RegistryObject<EntityType<Lightling>> LIGHTLING =
+            ENTITY_TYPES.register("lightling", () -> EntityType.Builder.of(Lightling::new, MobCategory.CREATURE)
+                    .sized(1f, 1f).build("lightling"));
+
 
 
     public static final RegistryObject<EntityType<ModBoatEntity>> MOD_BOAT =

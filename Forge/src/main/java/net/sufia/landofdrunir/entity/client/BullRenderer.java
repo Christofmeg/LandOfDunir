@@ -13,7 +13,6 @@ public class BullRenderer extends MobRenderer<Bull, BullModel<Bull>> {
     public BullRenderer(EntityRendererProvider.Context pContext) {
         super(pContext, new BullModel<>(pContext.bakeLayer(ModModelLayers.BULL)), 1f);
     }
-
     @Override
     public ResourceLocation getTextureLocation(Bull pEntity) {
         return new ResourceLocation(DrunirMod.MODID, "textures/entity/bull.png");

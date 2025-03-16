@@ -27,6 +27,8 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.MAGMAFIEND, MagmafiendModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.MAGMAFIEND_FIREBALL, MagmafiendFireballModel::createBodyLayer);
 
+        event.registerLayerDefinition(ModModelLayers.LIGHTLING, LightlingModel::createBodyLayer);
+
         event.registerLayerDefinition(ModModelLayers.FIR_BOAT, BoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.FIR_CHEST_BOAT, ChestBoatModel::createBodyModel);
     }
