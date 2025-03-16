@@ -16,6 +16,7 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_DRUNITE_TOOL = tag("needs_drunite_tool");
 
         public static final TagKey<Block> NEEDS_PLASMITE_TOOL = tag("needs_plasmite_tool");
+        public static final TagKey<Block> NEEDS_MAGMATITE_TOOL = tag("needs_magmatite_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(DrunirMod.MODID, name));

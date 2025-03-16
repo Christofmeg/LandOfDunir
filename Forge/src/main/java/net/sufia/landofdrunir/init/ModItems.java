@@ -74,13 +74,22 @@ public class ModItems {
     public static final RegistryObject<Item> GALEON_PICKAXE = ITEMS.register("galeon_pickaxe", () -> new PickaxeItem(ModToolTiers.GALEON, 6,  -2.8f,new  Item.Properties()));
     public static final RegistryObject<Item> GALEON_AXE = ITEMS.register("galeon_axe", () -> new AxeItem(ModToolTiers.GALEON, 9,  -3f,new  Item.Properties()));
     public static final RegistryObject<Item> GALEON_SHOVEL = ITEMS.register("galeon_shovel", () -> new ShovelItem(ModToolTiers.GALEON, 6.5f,  -3f,new  Item.Properties()));
-    public static final RegistryObject<Item> GALEON_HOE = ITEMS.register("galeon_hoe", () -> new HoeItem(ModToolTiers.PLASMITE, 0,  0,new  Item.Properties()));
+    public static final RegistryObject<Item> GALEON_HOE = ITEMS.register("galeon_hoe", () -> new HoeItem(ModToolTiers.GALEON, 0,  0,new  Item.Properties()));
     public static final RegistryObject<Item> GALEON_LANCE = ITEMS.register("galeon_lance", () -> new LanceItem(ModToolTiers.GALEON,13,-3.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> GALEON_HELMET = ITEMS.register("galeon_helmet", () -> new ArmorItem(ModArmourMaterials.GALEON, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> GALEON_CHESTPLATE = ITEMS.register("galeon_chestplate", () -> new ArmorItem(ModArmourMaterials.GALEON, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> GALEON_LEGGINGS = ITEMS.register("galeon_leggings", () -> new ArmorItem(ModArmourMaterials.GALEON, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> GALEON_BOOTS = ITEMS.register("galeon_boots", () -> new ArmorItem(ModArmourMaterials.GALEON, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> MAGMATITE = ITEMS.register("magmatite", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MAGMATITE_SWORD = ITEMS.register("magmatite_sword", () -> new SwordItem(ModToolTiers.MAGMATITE, 8,  -2.4f,new  Item.Properties()));
+    public static final RegistryObject<Item> MAGMATITE_PICKAXE = ITEMS.register("magmatite_pickaxe", () -> new PickaxeItem(ModToolTiers.MAGMATITE, 6,  -2.8f,new  Item.Properties()));
+    public static final RegistryObject<Item> MAGMATITE_AXE = ITEMS.register("magmatite_axe", () -> new AxeItem(ModToolTiers.MAGMATITE, 9,  -3f,new  Item.Properties()));
+    public static final RegistryObject<Item> MAGMATITE_SHOVEL = ITEMS.register("magmatite_shovel", () -> new ShovelItem(ModToolTiers.MAGMATITE, 6.5f,  -3f,new  Item.Properties()));
+    public static final RegistryObject<Item> MAGMATITE_HOE = ITEMS.register("magmatite_hoe", () -> new HoeItem(ModToolTiers.MAGMATITE, 0,  0,new  Item.Properties()));
+    public static final RegistryObject<Item> MAGMATITE_LANCE = ITEMS.register("magmatite_lance", () -> new LanceItem(ModToolTiers.MAGMATITE,13,-3.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> METAL_POLE = ITEMS.register("metal_pole", () -> new Item(new Item.Properties()));
 

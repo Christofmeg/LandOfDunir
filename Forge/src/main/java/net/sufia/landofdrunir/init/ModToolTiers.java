@@ -26,4 +26,9 @@ public class ModToolTiers {
             new ForgeTier(7,4881,23f,0,30,
                     ModTags.Blocks.NEEDS_PLASMITE_TOOL, () -> Ingredient.of(ModItems.PLASMITE.get())),
             ResourceLocation.fromNamespaceAndPath(DrunirMod.MODID, "plasmite"), List.of(ModToolTiers.DRUNITE), List.of());
+
+    public static final Tier MAGMATITE = TierSortingRegistry.registerTier(
+            new ForgeTier(8,6089,28f,0,40,
+                    ModTags.Blocks.NEEDS_MAGMATITE_TOOL, () -> Ingredient.of(ModItems.MAGMATITE.get())),
+            ResourceLocation.fromNamespaceAndPath(DrunirMod.MODID, "magmatite"), List.of(ModToolTiers.PLASMITE), List.of());
 }

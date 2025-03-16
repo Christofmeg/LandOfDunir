@@ -39,6 +39,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.GALEON_ORE.get(), ModItems.GALEON.get()));
         this.dropSelf(ModBlocks.GALEON_BLOCK.get());
 
+        this.dropSelf(ModBlocks.LARIMAR_BLOCK.get());
+        this.dropSelf(ModBlocks.LIGHTLING_BLOCK.get());
+        this.dropSelf(ModBlocks.LIGHTLING_LOG.get());
+        this.dropSelf(ModBlocks.LIGHTLING_STRIPPED_LOG.get());
+        this.dropSelf(ModBlocks.MAGMATITE_BLOCK.get());
+        this.add(ModBlocks.MAGMATITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.MAGMATITE_ORE.get(), ModItems.MAGMATITE.get()));
+        this.dropSelf(ModBlocks.POLISHED_LARIMAR.get());
+
 
         this.dropSelf(ModBlocks.RIBWORT.get());
         this.add(ModBlocks.POTTED_RIBWORT.get(), createPotFlowerItemTable(ModBlocks.RIBWORT.get()));

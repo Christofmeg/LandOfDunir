@@ -54,6 +54,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DRUNITE_SHOVEL.get());
                         pOutput.accept(ModItems.DRUNITE_HOE.get());
 
+                        pOutput.accept(ModItems.MAGMATITE.get());
+                        pOutput.accept(ModItems.MAGMATITE_SWORD.get());
+                        pOutput.accept(ModItems.MAGMATITE_PICKAXE.get());
+                        pOutput.accept(ModItems.MAGMATITE_AXE.get());
+                        pOutput.accept(ModItems.MAGMATITE_SHOVEL.get());
+                        pOutput.accept(ModItems.MAGMATITE_HOE.get());
+                        pOutput.accept(ModItems.MAGMATITE_LANCE.get());
+
                         pOutput.accept(ModItems.DRUNITE_HELMET.get());
                         pOutput.accept(ModItems.DRUNITE_CHESTPLATE.get());
                         pOutput.accept(ModItems.DRUNITE_LEGGINGS.get());
@@ -139,6 +147,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.FIR_BOAT.get());
                         pOutput.accept(ModItems.FIR_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.FIR_SAPLING.get());
+
+                        pOutput.accept(ModBlocks.LARIMAR_BLOCK.get());
+                        pOutput.accept(ModBlocks.LIGHTLING_BLOCK.get());
+                        pOutput.accept(ModBlocks.LIGHTLING_LOG.get());
+                        pOutput.accept(ModBlocks.LIGHTLING_STRIPPED_LOG.get());
+                        pOutput.accept(ModBlocks.MAGMATITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.MAGMATITE_ORE.get());
+                        pOutput.accept(ModBlocks.POLISHED_LARIMAR.get());
+
                     })
                     .build());
 

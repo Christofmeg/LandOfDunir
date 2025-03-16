@@ -120,5 +120,21 @@
   "block.landofdrunir.hollow_mossy_spruce_log": "Hollow Mossy Spruce Log",
   "sounds.landofdrunir.magmafiend_hurt": "Magmafiend Hurt Sound",
 
+  "block.landofdrunir.larimar_block": "Larimar Block",
+  "block.landofdrunir.lightling_block": "Lightling Block",
+  "block.landofdrunir.lightling_log": "Lightling Log",
+  "block.landofdrunir.lightling_stripped_log": "Lightling Stripped Log",
+  "block.landofdrunir.magmatite_block": "Magmatite Block",
+  "block.landofdrunir.magmatite_ore": "Magmatite Ore",
+  "block.landofdrunir.polished_larimar": "Polished Larimar",
+
+  "item.landofdrunir.magmatite": "Magmatite",
+  "item.landofdrunir.magmatite_axe": "Magmatite Axe",
+  "item.landofdrunir.magmatite_hoe": "Magmatite Hoe",
+  "item.landofdrunir.magmatite_lance": "Magmatite Lance",
+  "item.landofdrunir.magmatite_pickaxe": "Magmatite Pickaxe",
+  "item.landofdrunir.magmatite_shovel": "Magmatite Shovel",
+  "item.landofdrunir.magmatite_sword": "Magmatite Sword",
+
   "block.landofdrunir.plasmite_block": "Block of Plasmite"
 }

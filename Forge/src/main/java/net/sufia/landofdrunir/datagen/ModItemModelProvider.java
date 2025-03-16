@@ -47,6 +47,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PLASMITE);
         simpleItem(ModItems.METAL_POLE);
         simpleItem(ModItems.GOBLIN_DRIP);
+        simpleItem(ModItems.MAGMATITE);
 
 
         simpleItem(ModItems.RAW_VENISON);
@@ -73,6 +74,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.PLASMITE_SWORD);
         handheldItem(ModItems.PLASMITE_SHOVEL);
         handheldItem(ModItems.PLASMITE_HOE);
+
+        handheldItem(ModItems.MAGMATITE_AXE);
+        handheldItem(ModItems.MAGMATITE_PICKAXE);
+        handheldItem(ModItems.MAGMATITE_SWORD);
+        handheldItem(ModItems.MAGMATITE_SHOVEL);
+        handheldItem(ModItems.MAGMATITE_HOE);
+        handheldItem(ModItems.MAGMATITE_LANCE);
 
 
         trimmedArmorItem(ModItems.DRUNITE_HELMET);

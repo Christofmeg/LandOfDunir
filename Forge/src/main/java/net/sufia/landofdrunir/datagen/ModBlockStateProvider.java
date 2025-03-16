@@ -28,6 +28,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PLASMITE_ORE);
         blockWithItem(ModBlocks.GALEON_BLOCK);
         blockWithItem(ModBlocks.GALEON_ORE);
+        blockWithItem(ModBlocks.LARIMAR_BLOCK);
+        blockWithItem(ModBlocks.LIGHTLING_BLOCK);
+        blockWithItem(ModBlocks.LIGHTLING_LOG);
+        blockWithItem(ModBlocks.LIGHTLING_STRIPPED_LOG);
+        blockWithItem(ModBlocks.MAGMATITE_BLOCK);
+        blockWithItem(ModBlocks.MAGMATITE_ORE);
+        blockWithItem(ModBlocks.POLISHED_LARIMAR);
+
 
         simpleBlockWithItem(ModBlocks.RIBWORT.get(), models().cross(blockTexture(ModBlocks.RIBWORT.get()).getPath(),
                 blockTexture(ModBlocks.RIBWORT.get())).renderType("cutout"));
@@ -85,6 +93,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.FIR_PLANKS.get()));
         hangingSignBlock(ModBlocks.FIR_HANGING_SIGN.get(), ModBlocks.FIR_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.FIR_PLANKS.get()));
         saplingBlock(ModBlocks.FIR_SAPLING);
+
+
+
     }
     public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
         ModelFile sign = models().sign(name(signBlock), texture);

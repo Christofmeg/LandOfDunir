@@ -43,6 +43,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> GALEON_BLOCK = registerBlock("galeon_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6.5f, 20).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_RED)));
 
+    public static final RegistryObject<Block> LARIMAR_BLOCK = registerBlock("larimar_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6.5f, 20).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_RED)));
+
+    public static final RegistryObject<Block> LIGHTLING_BLOCK = registerBlock("lightling_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6.5f, 20).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_RED)));
+
+    public static final RegistryObject<Block> LIGHTLING_LOG = registerBlock("lightling_log",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6.5f, 20).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_RED)));
+
+    public static final RegistryObject<Block> LIGHTLING_STRIPPED_LOG = registerBlock("lightling_stripped_log",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6.5f, 20).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_RED)));
+
+    public static final RegistryObject<Block> MAGMATITE_BLOCK = registerBlock("magmatite_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6.5f, 20).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_RED)));
+
+    public static final RegistryObject<Block> MAGMATITE_ORE = registerBlock("magmatite_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6.5f, 20).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_RED)));
+
+    public static final RegistryObject<Block> POLISHED_LARIMAR = registerBlock("polished_larimar",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(6.5f, 20).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_RED)));
+
     public static final RegistryObject<Block> RIBWORT = registerBlock("ribwort",
         () -> new FlowerBlock(()-> MobEffects.WEAKNESS,5,BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
     public static final RegistryObject<Block> POTTED_RIBWORT = BLOCKS.register("potted_ribwort",
@@ -81,6 +102,11 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FIR_WOOD = registerBlock("stripped_fir_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> FIR_PLANKS = registerBlock("fir_planks",
+            () -> new PlanksBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> FIR_LEAVES = registerBlock("fir_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+
     public static final RegistryObject<Block> HOLLOW_FIR_LOG = registerBlock("hollow_fir_log",
             () -> new HollowLog(BlockBehaviour.Properties.copy(ModBlocks.FIR_LOG.get()).noOcclusion().strength(0.7f, 2).mapColor(MapColor.COLOR_GRAY)) {});
     public static final RegistryObject<Block> HOLLOW_ACACIA_LOG = registerBlock("hollow_acacia_log",
@@ -117,11 +143,6 @@ public class ModBlocks {
             () -> new HollowLog(BlockBehaviour.Properties.copy(ModBlocks.FIR_LOG.get()).noOcclusion().strength(0.7f, 2).mapColor(MapColor.COLOR_BROWN)) {});
     public static final RegistryObject<Block> HOLLOW_MOSSY_SPRUCE_LOG = registerBlock("hollow_mossy_spruce_log",
             () -> new HollowLog(BlockBehaviour.Properties.copy(ModBlocks.FIR_LOG.get()).noOcclusion().strength(0.7f, 2).mapColor(MapColor.COLOR_BROWN)) {});
-
-    public static final RegistryObject<Block> FIR_PLANKS = registerBlock("fir_planks",
-            () -> new PlanksBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
-    public static final RegistryObject<Block> FIR_LEAVES = registerBlock("fir_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
     public static final RegistryObject<Block> FIR_STAIRS = registerBlock("fir_stairs",
             () -> new StairBlock(()-> ModBlocks.FIR_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
