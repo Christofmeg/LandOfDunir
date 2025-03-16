@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "landofdrunir:block/hollow_mossy_cherry_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "landofdrunir:block/hollow_mossy_cherry_log"
+    },
+    "axis=z": {
+      "model": "landofdrunir:block/hollow_mossy_cherry_log_horizontal",
+      "x": 90
+    }
+  }
+}

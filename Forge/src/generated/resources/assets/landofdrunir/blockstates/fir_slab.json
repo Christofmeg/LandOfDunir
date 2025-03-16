@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "landofdrunir:block/fir_slab"
+    },
+    "type=double": {
+      "model": "landofdrunir:block/fir_planks"
+    },
+    "type=top": {
+      "model": "landofdrunir:block/fir_slab_top"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": {
+    "item": "landofdrunir:raw_venison"
+  },
+  "result": "landofdrunir:cooked_venison"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    " @ "
+  ],
+  "key": {
+    "#": {
+      "item": "landofdrunir:fir_planks"
+    },
+    "@": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "landofdrunir:fir_sign",
+    "count": 3
+  }
+}

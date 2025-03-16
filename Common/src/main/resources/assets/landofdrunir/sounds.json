@@ -1,0 +1,14 @@
+{
+  "magmafiend_hurt": {
+    "subtitles": "sounds.landofdrunir.magmafiend_hurt",
+    "sounds": [
+      "landofdrunir:magmafiend_hurt1"
+    ]
+  },
+  "magmafiend_death": {
+    "subtitles": "sounds.landofdrunir.magmafiend_death",
+    "sounds": [
+      "landofdrunir:magmafiend_death"
+    ]
+  }
+}

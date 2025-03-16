@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "# #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "landofdrunir:drunite"
+    }
+  },
+  "result": {
+    "item": "landofdrunir:drunite_helmet"
+  }
+}

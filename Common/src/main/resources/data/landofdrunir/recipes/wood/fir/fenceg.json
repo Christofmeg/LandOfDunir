@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "#@#",
+    "#@#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "@": {
+      "item": "landofdrunir:fir_planks"
+    }
+  },
+  "result": {
+    "item": "landofdrunir:fir_fence_gate",
+    "count": 1
+  }
+}

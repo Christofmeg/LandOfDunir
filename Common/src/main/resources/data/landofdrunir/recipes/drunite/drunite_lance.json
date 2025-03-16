@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  #",
+    " @ ",
+    "@  "
+  ],
+  "key": {
+    "#": {
+      "item": "landofdrunir:drunite"
+    },
+    "@": {
+      "item": "landofdrunir:metal_pole"
+    }
+  },
+  "result": {
+    "item": "landofdrunir:drunite_lance"
+  }
+}

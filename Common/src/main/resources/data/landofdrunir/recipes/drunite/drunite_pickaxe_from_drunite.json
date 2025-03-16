@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    " @ ",
+    " @ "
+  ],
+  "key": {
+    "#": {
+      "item": "landofdrunir:drunite"
+    },
+    "@": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "landofdrunir:drunite_pickaxe"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "landofdrunir:item/galeon_lance_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "landofdrunir:item/galeon_lance_2d"
+    },
+    "ground": {
+      "parent": "landofdrunir:item/galeon_lance_2d"
+    },
+    "fixed": {
+      "parent": "landofdrunir:item/galeon_lance_2d"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "@ @",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "landofdrunir:stripped_fir_log"
+    },
+    "@": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "item": "landofdrunir:fir_hanging_sign",
+    "count": 6
+  }
+}

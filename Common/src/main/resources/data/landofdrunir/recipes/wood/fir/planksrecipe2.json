@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "landofdrunir:fir_wood"
+    }
+  ],
+  "result": {
+    "item": "landofdrunir:fir_planks",
+    "count": 4
+  }
+}
