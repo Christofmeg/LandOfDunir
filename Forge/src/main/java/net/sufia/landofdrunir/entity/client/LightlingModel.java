@@ -16,32 +16,41 @@ import net.minecraft.world.entity.Entity;
 public class LightlingModel<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "lightling"), "main");
-	private final ModelPart bb_main;
+	private final ModelPart body;
+	private final ModelPart branch;
+	private final ModelPart lamp1;
+	private final ModelPart lamp2;
+	private final ModelPart lamp3;
+	private final ModelPart left_leg;
+	private final ModelPart right_leg;
 
 	public LightlingModel(ModelPart root) {
-		this.bb_main = root.getChild("bb_main");
+		this.body = root.getChild("body");
+		this.branch = root.getChild("branch");
+		this.lamp1 = this.branch.getChild("lamp1");
+		this.lamp2 = this.branch.getChild("lamp2");
+		this.lamp3 = this.branch.getChild("lamp3");
+		this.left_leg = root.getChild("left_leg");
+		this.right_leg = root.getChild("right_leg");
 	}
 
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(-28, -14).addBox(-8.0F, -16.0F, 8.0F, 16.0F, 16.0F, 16.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 0).addBox(-3.0F, -5.0F, -3.0F, 6.0F, 3.0F, 6.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 9).addBox(0.0F, -3.0F, 0.0F, 2.0F, 3.0F, 1.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 0).addBox(-2.0F, -3.0F, 0.0F, 2.0F, 3.0F, 1.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 25).addBox(-4.0F, -10.0F, 2.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-		.texOffs(24, 11).addBox(2.0F, -12.0F, 2.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-		.texOffs(24, 6).addBox(-4.0F, -11.0F, -4.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-		.texOffs(18, 9).addBox(2.0F, -13.0F, -5.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-		.texOffs(18, 0).addBox(-2.0F, -14.0F, -2.0F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 9).addBox(-3.0F, -5.0F, -3.0F, 6.0F, 2.0F, 6.0F, new CubeDeformation(0.25F))
-		.texOffs(0, 5).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 0.0F, 1.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 4).addBox(0.0F, 0.0F, -1.0F, 2.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create().texOffs(0, 16).addBox(-5.0F, -3.0F, -4.0F, 10.0F, 5.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 20.0F, 0.0F));
 
-		PartDefinition cube_r1 = bb_main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 17).addBox(-5.0F, -8.0F, 0.0F, 10.0F, 8.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -5.0F, 0.0F, 0.0F, 0.7854F, 0.0F));
+		PartDefinition branch = partdefinition.addOrReplaceChild("branch", CubeListBuilder.create().texOffs(0, 0).addBox(-8.0F, -16.0F, 0.0F, 16.0F, 16.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 17.0F, 0.0F));
 
-		PartDefinition cube_r2 = bb_main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(20, 17).addBox(-5.0F, -8.0F, 0.0F, 10.0F, 8.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -5.0F, 0.0F, 0.0F, -0.7854F, 0.0F));
+		PartDefinition lamp1 = branch.addOrReplaceChild("lamp1", CubeListBuilder.create().texOffs(0, 29).addBox(-2.0F, -1.0F, -3.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(-6.0F, -6.0F, 0.0F));
+
+		PartDefinition lamp2 = branch.addOrReplaceChild("lamp2", CubeListBuilder.create().texOffs(0, 29).addBox(-2.0F, -1.0F, -1.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(6.0F, -9.0F, 0.0F));
+
+		PartDefinition lamp3 = branch.addOrReplaceChild("lamp3", CubeListBuilder.create().texOffs(0, 29).addBox(-2.0F, -1.0F, -2.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(-4.0F, -15.0F, 0.0F));
+
+		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(12, 29).addBox(0.0F, 0.0F, -1.0F, 3.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(3.0F, 22.0F, 0.0F));
+
+		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(12, 29).mirror().addBox(-3.0F, 0.0F, -1.0F, 3.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-3.0F, 22.0F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
@@ -53,6 +62,9 @@ public class LightlingModel<T extends Entity> extends EntityModel<T> {
 
 	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		branch.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		left_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		right_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

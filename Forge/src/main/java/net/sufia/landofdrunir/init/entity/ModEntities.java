@@ -50,6 +50,9 @@ public class ModEntities {
     public static final RegistryObject<EntityType<Lightling>> LIGHTLING =
             ENTITY_TYPES.register("lightling", () -> EntityType.Builder.of(Lightling::new, MobCategory.CREATURE)
                     .sized(1f, 1f).build("lightling"));
+    public static final RegistryObject<EntityType<Sandstalker>> SANDSTALKER =
+            ENTITY_TYPES.register("sandstalker", () -> EntityType.Builder.of(Sandstalker::new, MobCategory.CREATURE)
+                    .sized(1f, 1f).build("sandstalker"));
 
 
 

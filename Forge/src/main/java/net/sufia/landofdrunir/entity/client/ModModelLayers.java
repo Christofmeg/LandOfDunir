@@ -31,4 +31,6 @@ public class ModModelLayers {
             ResourceLocation.fromNamespaceAndPath(DrunirMod.MODID, "chest_boat/fir"), "main");
     public static final ModelLayerLocation LIGHTLING = new ModelLayerLocation(
             ResourceLocation.fromNamespaceAndPath(DrunirMod.MODID, "lightling"), "main");
+    public static final ModelLayerLocation SANDSTALKER = new ModelLayerLocation(
+            ResourceLocation.fromNamespaceAndPath(DrunirMod.MODID, "sandstalker"), "main");
 }

@@ -75,6 +75,7 @@ public class DrunirMod {
             EntityRenderers.register(ModEntities.MAGMAFIEND_FIREBALL.get(), MagmafiendFireballRenderer::new);
 
             EntityRenderers.register(ModEntities.LIGHTLING.get(), LightlingRenderer::new);
+            EntityRenderers.register(ModEntities.SANDSTALKER.get(), SandstalkerRenderer::new);
 
             //boats underneath
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));

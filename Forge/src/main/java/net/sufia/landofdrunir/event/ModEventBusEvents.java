@@ -21,7 +21,8 @@ public class ModEventBusEvents {
         event.put(ModEntities.DRIPPY_GOBLIN.get(), DrippyGoblin.createAttributes().build());
         event.put(ModEntities.MAGMAFIEND.get(), Magmafiend.createAttributes().build());
 
-        event.put(ModEntities.LIGHTLING.get(), Magmafiend.createAttributes().build());
+        event.put(ModEntities.LIGHTLING.get(), Lightling.createAttributes().build());
+        event.put(ModEntities.SANDSTALKER.get(), Magmafiend.createAttributes().build());
 
     }
 }
